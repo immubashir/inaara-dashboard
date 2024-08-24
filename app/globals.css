@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body{
+        @apply bg-[#2E3037] text-white outfit-medium
+    }
+}
+
+.outfit-extralight {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+.outfit-light{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+}
+.outfit-thin{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+.outfit-regular{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+.outfit-medium{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+.outfit-semibold{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+.outfit-bold{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+}
+.outfit-extrabold{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+}
+.outfit-black{
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+}
+
+/* Base styles for the switch background and handle */
+.custom-switch .react-switch-bg {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient for off state */
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  .custom-switch .react-switch-bg.checked {
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient for on state */
+    transition: background 0.3s ease; /* Smooth background transition */
+  }
+  
+  /* Handle styles */
+  .custom-switch .react-switch-handle {
+    background-color: #fff; /* Handle color */
+    border-radius: 50%; /* Round handle */
+    border: 2px solid #444; /* Optional border around handle */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth handle transition */
+  }
+  
+  /* Handle position when switch is checked */
+  .custom-switch .react-switch-handle.checked {
+    transform: translateX(20px); /* Adjust handle position when checked */
+  }
+  
+  /* Optional: Add a hover effect for the handle */
+  .custom-switch .react-switch-handle:hover {
+    background-color: #f0f0f0; /* Light hover color */
+  }
+  
